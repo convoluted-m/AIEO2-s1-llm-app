@@ -2,7 +2,7 @@
 
 LLM-powered sentiment analysis app: FastAPI backend, Next.js frontend. The API (POST `/sentiment`) calls OpenAI to classify text as positive, neutral, or negative, returning a single-word label. The React/Next.js UI lets you paste text, send it to the API, and view the detected sentiment with an icon and text-length stat.
 
-## Backend (FastAPI) — run with Pipenv
+## Backend (FastAPI)
 
 ### Prerequisites
 Python 3.10+ and Pipenv installed.

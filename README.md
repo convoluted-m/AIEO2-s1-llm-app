@@ -8,8 +8,17 @@ Python 3.10+ and Pipenv installed.
 ### Install dependencies
 ```bash
 pipenv install "fastapi>=0.104.0" "uvicorn[standard]>=0.24.0"
+pipenv install "openai>=1.0.0"
 pipenv lock
 ```
+
+
+### Environment
+- Add your OpenAI key to a `.env` file (already gitignored), for example:
+  ```
+  OPENAI_API_KEY=your_key_here
+  ```
+- `python-dotenv` loads `.env` automatically at startup.
 
 ### Run the API
 From the repo root:

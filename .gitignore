@@ -15,6 +15,7 @@ env/
 __pycache__/
 *.py[cod]
 *.pyo
+node_modules/
 
 # macOS metadata
 .DS_Store

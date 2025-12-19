@@ -1,6 +1,8 @@
-# Backend API - Sentiment Analysis
+# Sentiment Analyser
 
-## How to Run the App (with Pipenv)
+LLM-powered sentiment analysis app: FastAPI backend, Next.js frontend. The API (POST `/sentiment`) calls OpenAI to classify text as positive, neutral, or negative, returning a single-word label. The React/Next.js UI lets you paste text, send it to the API, and view the detected sentiment with an icon and text-length stat.
+
+## Backend (FastAPI) — run with Pipenv
 
 ### Prerequisites
 Python 3.10+ and Pipenv installed.
@@ -14,10 +16,7 @@ pipenv lock
 
 
 ### Environment
-- Add your OpenAI key to a `.env` file (already gitignored), for example:
-  ```
-  OPENAI_API_KEY=your_key_here
-  ```
+- Add your OpenAI key to  `.env` file (already gitignored).
 - `python-dotenv` loads `.env` automatically at startup.
 
 ### Run the API
@@ -32,6 +31,16 @@ pipenv run uvicorn app:app --reload --port 8000
    - **API Base URL**: `http://localhost:8000`
    - **Interactive API Docs**: `http://localhost:8000/docs` (Swagger UI)
    - **Alternative Docs**: `http://localhost:8000/redoc` (ReDoc)
+
+## Frontend (Next.js)
+
+From `frontend/`:
+```bash
+npm install
+npm run dev
+```
+- The app expects the backend at `http://localhost:8000`.
+- Open `http://localhost:3000` to use the UI.
 
 ### Testing the API
 

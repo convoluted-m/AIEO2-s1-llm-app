@@ -148,10 +148,6 @@ export default function SentimentAnalysis() {
 
                 <div className="space-y-3 pt-8 border-t border-border/50 mt-8">
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-muted-foreground font-light">Confidence</span>
-                    <span className="text-sm font-light text-foreground">High</span>
-                  </div>
-                  <div className="flex items-center justify-between">
                     <span className="text-sm text-muted-foreground font-light">Text length</span>
                     <span className="text-sm font-light text-foreground">{text.length} characters</span>
                   </div>
